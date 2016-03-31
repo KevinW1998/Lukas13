@@ -1,6 +1,11 @@
 package waldock;
 
 public class ZahlenUtils {
+	/**
+	 * Berechnet die Lukaszahlen Ln rekursiv
+	 * @param n Wie oft die Lukaszahlen berechnet werden sollen
+	 * @return Das Ergebnis der Lukaszahlen
+	 */
 	public static int lukasRec(int n){
 		if(n < 0)
 			throw new ArithmeticException("n is smaller than 0!");
@@ -13,6 +18,11 @@ public class ZahlenUtils {
 		return lukasRec(n - 2) + lukasRec(n - 1);
 	}
 	
+	/**
+	 * Berechnet Fibonacci mithilfe eines Arrays
+	 * @param n Wie oft der Fibonacci berechnet werden soll
+	 * @return Das Ergebnis des Fibonacci
+	 */
 	public static long fibonacciArr(int n){
 		if(n < 0)
 			throw new ArithmeticException("n is smaller than 0!");
